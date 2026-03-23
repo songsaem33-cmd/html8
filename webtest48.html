@@ -10,7 +10,11 @@
 
 <body>
     <script type="text/javascript">
-        var markerIcon = new google.maps.MarkerImage("marker.jpg");
+        //        var markerIcon = new google.maps.MarkerImage("place-marker.jpg");
+        var markerIcon = {
+            url: "marker.jpg",
+            scaledSize: new google.maps.Size(30, 30)
+        }
 
         function MyPos() {
             alert("MyPos()");
